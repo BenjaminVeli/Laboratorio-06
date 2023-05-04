@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matricula.css">
+    <title>Nuevo Matricula</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Nueva Matricula</h1>
+        <form name="formMatricula" method="post" action="agregar_matricula.php">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Id alumno:</td>
+                        <td>
+                            <input type="number" name="alumno_id" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre:</td>
+                        <td>
+                            <input type="text" name="nombres" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido Paterno:</td>
+                        <td>
+                            <input type="text" name="ape_paterno" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apellido Materno:</td>
+                        <td>
+                            <input type="text" name="ape_materno">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Id curso:</td>
+                        <td>
+                            <input type="number" name="curso_id" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre del curso:</td>
+                        <td>
+                            <input type="text" name="nombre_curso" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Creditos:</td>
+                        <td>
+                            <input type="number" name="creditos" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="boton--agregar">Guardar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
